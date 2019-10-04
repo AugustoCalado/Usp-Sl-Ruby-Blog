@@ -1,25 +1,26 @@
-# README
+# Usp-Sl-Ruby-Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### How to generate controllers in ruby
 
-Things you may want to cover:
+``
+rails generate controller Welcome index
 
-* Ruby version
+``
 
-* System dependencies
+### Routing File
+In the **config/routes.br** we define how to connect incoming requests to controllers and actions.
 
-* Configuration
 
-* Database creation
+### Resource
+A resource is the term used for a collection of similar objects, such as articles, people, or animals.
 
-* Database initialization
+Rails provides a resources method which can be used to declare a standard REST resource.
 
-* How to run the test suite
+``
+Rails.application.routes.draw do
 
-* Services (job queues, cache servers, search engines, etc.)
+ resources :articles
 
-* Deployment instructions
+end
 
-* ...
-"# Usp-Sl-Ruby-Blog" 
+``
