@@ -33,3 +33,9 @@ Rails.application.routes.draw do
 end
 
 ```
+
+### Acessing URL Params
+
+```
+ Let's consider an example URL: http://www.example.com/?username=dhh&email=dhh@email.com. In this URL, params[:username] would equal "dhh" and params[:email] would equal "dhh@email.com".
+```
