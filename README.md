@@ -1,8 +1,15 @@
 # Usp-Sl-Ruby-Blog
 
 ##Sumary
-- [How to generate controllers in ruby]()
-- [Routing File]()
+- [Controller](#controller)
+  - [How to generate controllers in ruby](#how-to-generate-controllers-in-ruby)
+- [Routing File](#routing-file)
+- [Resource](#resource)
+- [Acessing URL Params](#acessing-url-params)
+- [Creating Models](#creating-models)
+- [File Create in Migrate file](#file-create-in-migrate-file)
+- [Run Migration](#run-migration)
+- [Basic Authentication](#basic-authentication)
 
 ### Controller
 
@@ -51,7 +58,7 @@ The above command creates a model with a title attribute of type string, and a t
 Those attributes are automatically added to the Article table in the database and mapped to the Article model.
 
 
-#### File Create in Migrate file
+### File Create in Migrate file
 ```
 class CreateArticles < ActiveRecord::Migration[6.0]
   def change
@@ -86,3 +93,4 @@ http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :
 # allow only authenticated users to perform delete action, 
 
 ```
+[!NOTE]
