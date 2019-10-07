@@ -72,3 +72,17 @@ end
 Rails will execute this migration command and tell you it created the Articles table.
 
 ``rails db:migrate``
+
+
+### Basic Authentication
+
+Use the Rails **http_basic_authenticate_with** method, which allows access to the requested action if that method allows it.
+
+```ruby
+http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+# The above code tells ruby to just allow user autheticated except for index and show
+
+ http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+# allow only authenticated users to perform delete action, 
+
+```
